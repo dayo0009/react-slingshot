@@ -6,7 +6,7 @@ defaults: &defaults
     - image: circleci/node:13.8.0
 
 
-Jobs:
+jobs:
   build:
      <<: *defaults
      steps:
