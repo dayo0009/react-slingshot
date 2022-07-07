@@ -7,7 +7,7 @@ defaults: &defaults
 
 
 Jobs:
-	build:
+  build:
      <<: *defaults
   steps:
     - checkout
