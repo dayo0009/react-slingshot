@@ -9,27 +9,25 @@ defaults: &defaults
 Jobs:
   build:
      <<: *defaults
-  steps:
-    - checkout
-    - run: npm i
-    - run: npm run lint
+     steps:
+      - checkout
+      - run: npm i
+      - run: npm run lint
 
 
   test:
      <<: *defaults
-  steps:
-    - checkout
-    - run: npm i
-    - run: npm run test
-
-
+     steps:
+      - checkout
+      - run: npm i
+      - run: npm run test
 
   analyze:
      <<: *defaults
-  steps:
-    - checkout
-    - run: npm i
-    - run: npm audit
+     steps:
+      - checkout
+      - run: npm i
+      - run: npm audit
 
 
 workflows:
