@@ -32,7 +32,7 @@ Jobs:
 
 workflows:
   build-test-analyze-job:
-    Jobs:
+    jobs:
       - build
       - test:
           requires:
