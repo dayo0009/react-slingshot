@@ -26,7 +26,6 @@ jobs:
      <<: *defaults
      steps:
       - checkout
-      - run: npm i
       - run: npm audit
 
 
